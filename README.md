@@ -1,2 +1,2 @@
 # testing_project
-- testing project demonstrationg knowledge of testng
+- testing project demonstrating knowledge of testng
