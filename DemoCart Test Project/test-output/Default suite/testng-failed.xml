@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testSelenium.TestNG_DemoCart_Verify_DemoCart_Plus">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="setUpTest"/>
+          <include name="demoCartPlusTest"/>
+        </methods>
+      </class> <!-- testSelenium.TestNG_DemoCart_Verify_DemoCart_Plus -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

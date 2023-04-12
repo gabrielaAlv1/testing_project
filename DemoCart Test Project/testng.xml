@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="8" parallel="classes" name="Suite">
+  <test thread-count="8" parallel="classes" name="Test">
+    <classes>
+      <class name="testSelenium.TestNG_DemoCart_Verify_Add_WishList"/>
+      <class name="testSelenium.TestNG_DemoCart_Verify_DemoCart_Plus"/>
+      <class name="testSelenium.TestNG_DemoCart_Verify_Media_Links"/>
+      <class name="testSelenium.TestNG_DemoCart_Verify_Contact_Form"/>
+      <class name="testSelenium.TestNG_DemoCart_Verify_Search_Bar"/>
+      <class name="testSelenium.TestNG_DemoCart_Verify_Add_Cart"/>
+      <class name="testSelenium.TestNg_DemoCart_Verify_Cart_Total"/>
+      <class name="testSelenium.TestNG_DemoCart_Verify_Checkout"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
