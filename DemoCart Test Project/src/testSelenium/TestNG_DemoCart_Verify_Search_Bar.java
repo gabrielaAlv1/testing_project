@@ -27,15 +27,18 @@ public class TestNG_DemoCart_Verify_Search_Bar {
 
   @Test
   public void demoCartSearchBarTest() throws InterruptedException {
-
+    
+    // Go to Demo Cart Page
     driver.get("https://demo.themefreesia.com/shoppingcart/");
 
     Thread.sleep(3000);
-
+    
+    // Enter Dumbbell into search bar
     driver.findElement(By.id("woocommerce-product-search-field-0")).sendKeys("dumbbell");
 
     Thread.sleep(3000);
-
+    
+    // Hit enter on the search bar
     driver.findElement(By.id("woocommerce-product-search-field-0")).sendKeys(Keys.RETURN);
 
     Thread.sleep(3000);
