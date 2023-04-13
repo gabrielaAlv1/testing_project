@@ -28,34 +28,36 @@ public class TestNG_DemoCart_Verify_Contact_Form {
 
   @Test
   public void demoCartVerifyContactForm() throws InterruptedException {
-
+    // Go to Demo cart site
     driver.get("https://demo.themefreesia.com/shoppingcart/");
     Thread.sleep(3000);
 
-
+    // select and click on contact us page
     driver.findElement(By.xpath("//*[@id=\"mega-menu-item-179\"]/a")).click();
 
     Thread.sleep(3000);
 
-
+    // Enter full name into text box
     driver.findElement(By.name("your-name")).sendKeys("John Doe");
 
     Thread.sleep(3000);
 
-
+    // enter email into text box
     driver.findElement(By.name("your-email")).sendKeys("JohnDoe@gmail.com");
 
     Thread.sleep(3000);
 
-
+    // Enter Email Subject into text box
     driver.findElement(By.name("your-subject")).sendKeys("Contact Verification");
 
     Thread.sleep(3000);
-
+    
+    // Enter Contact message into text box
     driver.findElement(By.name("your-message")).sendKeys("Test Message");
 
     Thread.sleep(3000);
-
+    
+    // select send
     driver.findElement(By.xpath("//*[@id=\"wpcf7-f181-p177-o1\"]/form/p[5]/input")).click();
 
     Thread.sleep(3000);
@@ -64,7 +66,8 @@ public class TestNG_DemoCart_Verify_Contact_Form {
     scroll.executeScript("window.scrollBy(0, 600)");
 
     Thread.sleep(3000);
-
+    
+    // Take Screenshot
     TakesScreenshot screenshot = (TakesScreenshot) driver;
 
     File src = screenshot.getScreenshotAs(OutputType.FILE);
